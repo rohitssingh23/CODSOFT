@@ -1,0 +1,41 @@
+Objective
+The objective of the "Student grade calculator" program is to calculate the total marks, average percentage, and grade of a student based on the marks obtained in multiple subjects.
+It allows users to input a student's name, the number of subjects, and the marks for each subject, and then displays the student's total marks, average percentage, and corresponding grade.
+
+
+Program Functions
+1.Constructor Student(String name, int[] marks):
+   Initializes a Student object with a name and an array of marks.
+   Calculates the total marks, average percentage, and grade.
+
+2.calculateTotalMarks():
+   Calculates the total marks by summing up the marks in all subjects.
+
+3.CalculateAveragePercentage():
+    Calculates the average percentage of the student based on the total marks and the number of subjects.
+
+4.CalculateGrade():
+    Determines the grade based on the average percentage:
+    A: 90% and above
+    B: 80% to 89%
+    C: 70% to 79%
+    D: 60% to 69%
+    F: Below 60%
+
+5.DisplayResults():
+    Displays the student's report including name, total marks, average percentage, and grade.
+
+6.Main(String[] args):
+    Entry point of the program.
+    Takes input from the user for student's name, number of subjects, and marks for each subject.
+    Ensures that the input is valid (non-empty name, marks between 0 and 100).
+    Creates a Student object with the input data.
+    Displays the student's report using the displayResults() method.
+
+
+Flow of the Program
+1.The program starts by taking input for the student's name and the number of subjects.
+2.For each subject, the program takes input for the marks, ensuring they are valid (between 0 and 100).
+3.A Student object is created with the provided name and marks.
+4.The total marks, average percentage, and grade are calculated within the Student object.
+5.The program then displays the student's report including name, total marks, average percentage, and grade.
