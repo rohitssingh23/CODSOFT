@@ -1,1 +1,52 @@
+Objective: The project aims to create a simple Number Guessing Game where the player tries to guess a randomly generated
+number within a specified range.
+
+Features:
+
+1.Initialization: The NumberGame class is initialized with parameters such as the minimum and maximum range of the numbers to be guessed, 
+and the maximum number of attempts allowed.
+
+2.Game Loop: The game operates in a loop that allows the player to play multiple rounds if desired. 
+The loop continues until the player chooses not to play again.
+
+3.Random Number Generation: Within each round, a random number is generated using the generateRandomNumber() method. 
+This number is kept secret from the player.
+
+4.Guess Input: The player is prompted to input their guess using the getValidGuess() method. 
+The input is validated to ensure it is within the specified range.
+
+5.Guess Comparison: The player's guess is compared to the randomly generated number.
+Feedback is provided to the player if the guess is too low or too high.
+
+6.Scoring: The player's score is calculated based on the number of attempts taken to guess the correct number. 
+A lower number of attempts results in a higher score.
+
+7.Play Again: After each round, the player is asked if they want to play again.
+Their total score and the number of rounds played are displayed at the end of the game.
+
+
+Java Topics Covered:
+
+1.Object-Oriented Programming: The project is structured using classes (NumberGame) and objects to model the game.
+
+2.User Input with Scanner: The Scanner class is used to get input from the player during the game.
+
+3.Random Number Generation with Random: The Random class is used to generate random numbers for the player to guess.
+
+4.Error Handling with try-catch: Exceptions such as NumberFormatException and IllegalArgumentException are handled to
+ensure proper input validation.
+
+5.Loop Control: The game flow is controlled using while loops to allow for multiple rounds and limited attempts.
+
+6.Basic Arithmetic Operations: The player's score is calculated based on the number of attempts taken.
+
+
+Game Flow:
+The game starts by welcoming the player and displaying the range of numbers they need to guess.
+The player is prompted to enter their guess.
+The game checks if the guess is correct, too low, or too high.
+Feedback is provided to the player, and the number of attempts is tracked.
+Steps 2-4 are repeated until the player guesses correctly or runs out of attempts.
+At the end of each round, the player's score is updated based on their performance.
+The player is asked if they want to play again, and the total rounds played and final score are displayed when they finish playing.
 
