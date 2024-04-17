@@ -1,0 +1,63 @@
+Objective:
+The objective of this ATM program is to create a simple interactive ATM interface that allows users to perform basic banking operations
+such as checking balance, depositing money, withdrawing money, changing PIN, viewing transaction history, and exiting the system.
+
+Technologies Used:
+1.Java
+2.Scanner Class
+3.Object-Oriented Programming (OOP) Concepts
+4.Classes and Objects
+5.Encapsulation
+6.Inheritance
+7.ArrayList for storing transaction history
+
+
+Program Functions:
+1.Check Balance: Allows the user to check their current account balance in Indian Rupees (₹).
+2.Deposit: Enables the user to deposit money into their account. It asks for the amount to deposit and the user's PIN for verification.
+3.Withdraw: Allows the user to withdraw money from their account. It asks for the amount to withdraw and the user's PIN for verification. 
+  It also checks for sufficient funds before allowing the withdrawal.
+4.Change PIN: Allows the user to change their PIN. It asks for the current PIN and then prompts for the new PIN.
+5.View Transaction History: Displays the transaction history of the user's account, showing all deposits, withdrawals, and PIN changes.
+6.Exit: Allows the user to exit the ATM interface.
+
+
+Program Flow
+1.Welcome Message and Options Display:
+    The program starts by displaying a welcome message and a list of options for the user to choose from.
+    Options include checking balance, depositing, withdrawing, changing PIN, viewing transaction history, and exiting.
+
+2.User Input and Option Selection:
+   The user enters their choice by selecting a corresponding number.
+   The program validates the user's input to ensure it's a valid number.
+
+3.Performing Operations:
+    Depending on the user's choice, the program performs the selected operation:
+     1.Check Balance: Displays the current account balance.
+     2.Deposit: Asks for the deposit amount and the user's PIN, then updates the account balance.
+     3.Withdraw: Asks for the withdrawal amount and the user's PIN, then updates the account balance if sufficient funds are available.
+     4.Change PIN: Asks for the current PIN and the new PIN, then updates the PIN if the current PIN is correct.
+     5.View Transaction History: Displays the transaction history of the account.
+     6.Exit: Terminates the program and displays a goodbye message.
+
+4.Looping and Continuation:
+   The program continues to run in a loop until the user chooses to exit.
+   After each successful deposit, withdrawal, or PIN change, the program displays the updated account balance in Indian Rupees (₹).
+
+
+Running the Program
+
+1.Setting Up the Bank Account:
+   Create a BankAccount object with an initial balance and a PIN.
+   Example: BankAccount userAccount = new BankAccount(1000.0, 1234);
+
+2.Creating an ATM Instance:
+   Create an ATM object, passing the BankAccount object to it.
+   Example: ATM atm = new ATM(userAccount);
+
+3.Starting the ATM Interface:
+   Call the start() method of the ATM object to begin the ATM interface.
+   Example: atm.start();
+
+4.Performing Operations:
+   Follow the on-screen instructions to select options, perform transactions, and view account details.
